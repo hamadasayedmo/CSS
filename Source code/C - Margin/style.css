@@ -1,0 +1,6 @@
+div {
+    background-color:blueviolet;
+    color: aliceblue;
+    margin: 10px auto;  /* margin add to negative value  هامش خارجي*/
+    width: 70%;
+}

@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+}
+
+span {
+    cursor: grab;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: firebrick;
+    font-weight: bold;
+}

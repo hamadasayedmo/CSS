@@ -1,0 +1,52 @@
+/*
+    - Type Position
+        static
+        relative
+        absolute
+        fixed
+        sticky
+
+*/
+
+body {
+    min-height: 5000px;
+}
+div {
+    width: 100px;
+    color: white;
+    padding: 10px;
+}
+
+.one {
+    background-color: red;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.two {
+    background-color: green;
+    position: relative;
+}
+
+.parent {
+    width: 500px;
+    height: 500px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.fixed {
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color:black;
+    width: 100%;
+    text-align: center;
+}
