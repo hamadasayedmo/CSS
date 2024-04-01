@@ -1,0 +1,9 @@
+div {
+    background-color: blue;
+    /* 10px 20px 10px 20px */
+    padding: 10px 20px;
+
+    /* top - right - batten - left */ 
+    padding-top: 10px;
+    color: aliceblue;
+}

@@ -1,0 +1,26 @@
+div {
+    width: 100px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+}
+
+.one {
+    background-color: red;
+    top: 40px;
+    left: 20px;
+    z-index: 3;
+}
+
+.two {
+    background-color: green;
+    top: 30px;
+    left: 10px;
+    z-index: 0;
+}
+
+.three {
+    background-color: blue;
+    top: 20px;
+    left: 0px;
+}

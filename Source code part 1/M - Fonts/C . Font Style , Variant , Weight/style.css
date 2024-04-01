@@ -1,0 +1,15 @@
+.style {
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* للمعرفه فقط */
+.Variant {
+    font-variant: small-caps;
+}
+
+.Variant p{
+    text-transform: capitalize;
+}
+

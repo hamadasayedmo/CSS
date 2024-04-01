@@ -1,0 +1,15 @@
+div h2  {
+    background-color: darkcyan;
+    display: inline-block;
+    color: burlywood;
+    padding: 10px;
+}
+
+div .special {   /* All element on div */
+    color: blueviolet;
+}
+
+.special {
+    color: orangered ;
+}
+
