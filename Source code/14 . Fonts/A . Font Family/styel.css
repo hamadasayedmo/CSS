@@ -1,0 +1,9 @@
+div,
+p  {
+    background-color: #eee;
+    padding: 10px;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}

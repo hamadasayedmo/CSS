@@ -1,0 +1,21 @@
+.parent {
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: #eee;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.parent div {
+    padding: 20px;
+    background-color: red;
+    color: #fff;
+    font-size: 30px;
+}

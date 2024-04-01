@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+.parent {
+    background-color: black;
+    padding: 10px;
+}
+
+.parent div {
+    background-color: #eee;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    width: calc((100% - 90px) / 5);
+    margin-left: 15px;
+
+    float: left;
+}
+
+.parent p {
+    clear: both;
+}
+
+.parent .opacity {
+    opacity: 0.7;
+}
+
+/* 
+    content width is: 100%
+    6 space 2% * 6 => 12% from content width 
+    88% Available space
+    5 element the width is: 88% / 5 
+*/

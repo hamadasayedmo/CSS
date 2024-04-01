@@ -1,0 +1,25 @@
+div ,
+p {
+    background-color: #eee;
+    color: brown;
+    text-shadow : 1px 1px mediumblue;
+    
+    text-align: center;
+}
+
+p {
+    direction:rtl
+}
+
+img {
+    width: 20%;
+    vertical-align: middle;
+}
+
+.link a{
+    border-radius: 15px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;  /* delete line in link google  */
+    text-transform: capitalize; /* G */
+}

@@ -1,0 +1,10 @@
+.center {
+    width: 200px;
+    height: 200px;
+    background-color:crimson;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;  /*? توسيط عنصر عرضيا */
+    align-items: center;      /*? توسيط عنصر طوليا */
+}

@@ -1,0 +1,12 @@
+div {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+    border: 10px red solid;
+    
+    
+    /* outline: 10px black solid; */
+    outline-width: 10px;
+    outline-color: black;
+    outline-style:solid ;
+}

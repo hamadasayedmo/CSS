@@ -1,0 +1,25 @@
+                            /*! Filters */
+
+* {
+    box-sizing: border-box;
+}
+
+.one {
+    width: 400px;
+    transition: 0.3s .3s linear;
+    filter: grayscale(100%);  /* تدرج رمادي */ 
+}  
+
+.one:hover{
+    filter: grayscale(0) ;
+}
+
+.two {
+    width: 400px;
+    transition: 0.3s .3s linear;
+    filter: blur(4px);  /* مضبضبب */
+}
+
+.two:hover{
+    filter: blur(0) ;
+}

@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.parent {
+    width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 10px 10px;
+}
+
+.parent div {
+    font-size: 30px;
+    padding: 20px;
+    background-color: red;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .five {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: blue;
+}
