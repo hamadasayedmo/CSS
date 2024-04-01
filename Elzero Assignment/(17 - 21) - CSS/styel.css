@@ -1,0 +1,59 @@
+* {
+    font-family: arial;
+    font-weight: bold;
+}
+.shadow {
+    text-shadow: 1px 1px 1px #f44336, 1.5px 1.5px 0 #2196f3;
+    font-size: xx-large;
+}
+
+.shadow,
+.one,
+.two,
+.three
+{
+    padding: 20px;
+    word-spacing: 5px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.one  {
+    text-transform: uppercase;
+}
+
+.two  {
+    text-transform: capitalize;
+}
+
+.three  {
+    text-transform: lowercase;
+}
+
+.Lorem-one,
+.Lorem-tow, 
+.Lorem-three {
+    width: 400px;
+    padding: 30px;
+    margin: 30px;
+    background-color: #eee;
+}
+
+.Lorem-three {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    background-color: #0fafa0;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-bottom: 10px solid #0e5e57;
+    padding: 20px;
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    font-size: 31px;
+}

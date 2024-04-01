@@ -1,0 +1,38 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/*   Commissioning 01   */
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+p,
+.title {
+    color: green;
+}
+
+
+
+
+/*   Commissioning 02   */
+.one ,
+.tow , 
+.three , 
+.four {
+
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    max-width: 400px;
+    max-height: 25px;
+    overflow: hidden;
+    width: fit-content;
+    background-color:#9b2222;
+}

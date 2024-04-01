@@ -1,0 +1,86 @@
+* {
+    font-family: Arial;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.One div  {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    margin: 10px  auto;
+    line-height: 60px;   /* ارتفاع الخط*/
+}
+
+.first {
+    background-color: #eee;
+}
+
+:empty {
+    background-color: red;
+}
+
+.Two div {
+    background-color: #eee;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 20px 28px;
+    margin: 10px auto;
+}
+
+.Two div::first-letter {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 8px;
+    float: left;
+    margin-left: -40px;
+    margin-top: -10px;
+}
+
+.Three p {
+    background-color: #eee;
+    width: 400px;
+    padding: 20px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.Three p::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 14px solid;
+    border-color: transparent #e91e63 transparent transparent;
+    left: -25px;
+    top: 15px;
+}
+
+.Three p::after {
+    content: " ";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #e91e63;
+    left: 0;
+    top: 0;
+}
+
+.Four p {
+    padding: 20px;
+    width: 500px;
+    margin: 10px auto;
+    background-color: #ccc;
+    counter-increment: numbers;
+    border-right: 5px solid #f44336;
+}
+
+.Four p::before {
+    content: counter(numbers);
+    background-color: #f44336;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    top: 0px;
+    left: -20px;
+}

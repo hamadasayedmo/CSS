@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.parent{
+    text-align: center;
+    width: 800px;
+    font-weight: bold;
+    margin: 20px auto;
+    background-color: #eee;
+    
+}
+
+.row-1,
+.row-2,
+.row-3, 
+.row-4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    float: left;
+    margin-left: 15px;
+}
+
+.row-1 {
+    width: calc((800px - 15px) / 1);
+}
+
+.row-2 {
+    width: calc((800px - 45px) / 3);
+    
+
+}
+
+.row-3 {
+    width: calc((800px - 30px) / 2);
+}
+
+.row-4 {
+    width: calc((800px - 60px) / 4);
+}
+
+.clear {
+    clear: both;
+}
+
+.child div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #ccc ;/* Get The Background From Image */
+    color: black;
+}
+
+.child .one{
+    background-color: rgb(179 179 179 / 0.1);
+}
+
+.child .two{
+    opacity: .1;
+}

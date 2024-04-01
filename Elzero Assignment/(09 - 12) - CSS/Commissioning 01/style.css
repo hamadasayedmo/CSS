@@ -1,0 +1,27 @@
+.one,
+.tow,
+.three {
+    font-family: Arial;
+    padding: 20px;
+    margin-right: 15px ;
+    display: inline-block;
+    background-color: #eee;
+    outline: 5px black solid;
+    border-radius: 10%;
+}
+
+.one {
+    border: 5px red solid;
+}
+
+.tow {
+    border-width: 5px;
+    border-color: blue green;
+    border-style: solid;
+}
+
+.three {
+    border-width: 5px;
+    border-color: red green blue yellow;
+    border-style: dashed;
+}

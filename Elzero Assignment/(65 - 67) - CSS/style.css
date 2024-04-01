@@ -1,0 +1,125 @@
+/*? Ass 1 */
+.one {
+    width: 300px;
+    height: 200px;
+    margin: 100px auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #eee;
+    color: #03a9f4;
+    
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.one::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e91e63;
+    transform: rotate(7deg);
+    z-index: -1 ;
+}
+
+.one::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #03a9f4;
+    transform: rotate(-7deg);
+    z-index: -2 ;
+}
+
+
+
+/*? Ass 2 */
+.two {
+    width: 200px;
+    height: 200px;
+    background: #eee;
+    color: #2196f3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.two::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+}
+
+.two::after {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #2196f3 transparent #2196f3 #2196f3 ;
+}
+
+
+
+/*? Ass 3 */
+.three {
+    width: 200px;
+    height: 200px;
+    background: #eee;
+    color: #2196f3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.three::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+    transition: .5s;
+}
+
+.three::after {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #2196f3 transparent #2196f3 #2196f3 ;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.three:hover::before {
+    transform: rotate(360deg);
+}
+
+.three:hover::after {
+    transform: rotate(-360deg);
+}

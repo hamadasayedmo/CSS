@@ -1,0 +1,238 @@
+* {
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+:root {
+    --marginAuto : 10px auto;
+    --padding : 10px ;
+    --background-color : #eee;
+    --margin: 10px;
+}
+
+
+
+/*?  Assuming One  */
+.Ass1 {
+    width: 100px;
+    height: 100px;
+    margin: var(--marginAuto);
+    padding: var(--padding);
+    color: #ff5722;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    box-shadow: 4px 0px 0px #ff5722, inset 4px 0px 0px #03a9f4;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*?  Assuming Two  */
+.Ass2,
+.Ass3,
+.Ass4,
+.Ass5 {
+    width: 600px;
+    height: 300px;
+    background-color: var(--background-color);
+    padding: var(--padding);
+    margin: var(--marginAuto);
+}
+
+.Ass2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.Ass2 div {
+    width: calc(95% / 3);
+    height: 40px;
+    background-color: #f44336;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+/*?  Assuming Three  */
+.Ass3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.Ass3 div {
+    width: calc(95% / 3);
+    height: 50%;
+    background-color: #607d8b;
+    color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ass3 .one {
+    order: 6;
+    height: 40px;
+    align-self: flex-end;
+}
+
+.Ass3 .two {
+    order: 5;
+    align-self: start;
+}
+
+.Ass3 .three {
+    order: 2;
+    height: 40px;
+}
+
+
+
+/*?  Assuming Four  */
+.Ass3 .four {
+    order: 3;
+}
+
+.Ass3 .five {
+    order: 4;
+}
+
+.Ass3 .six {
+    order: 1;
+}
+
+.Ass4 {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.Ass4 div {
+    width: 30px;
+    height: 80px;
+    color: #fff;
+    background-color: #009688;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ass4 .two {
+    width: 300px;
+    height: 80px;
+
+    align-self: flex-start;
+}
+
+
+
+/*?  Assuming Five  */
+.Ass5 {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+
+.Ass5 div{ 
+    width: calc(80% / 4);
+    height: 50%;
+    color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ass5 .one {
+    background-color: #ff9800;
+    order: 2;
+}
+
+.Ass5 .two {
+    background-color: #8bc34a;
+    order: 3;
+    align-self: flex-end;
+}
+
+.Ass5 .three {
+    background-color: #795548;
+    order: 4;
+}
+
+.Ass5 .four {
+    background-color: #673ab7;
+    order: 1;
+    align-self: flex-end;
+}
+
+
+
+/*?  Assuming Six  */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo,
+.links {
+    margin: var(--margin);
+    padding: var(--padding);
+    background-color: var(--background-color) ;
+    
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 6);
+    height: 40px;
+}
+
+.links {
+    justify-content: flex-end;
+    list-style-type: none;
+    width: 100%;
+}
+
+.links li {
+    padding-left: 20px;
+}
+
+.main-area {
+    display: flex;
+    justify-content: space-between
+}
+
+.main-area div {
+    background-color: var(--background-color);
+    margin: var(--margin);
+    padding: var(--padding);
+    height: 400px;
+}
+
+.main-area .content {
+    width: 725px
+}
+
+.main-area .sidebar {
+    width: 225px
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+}
+
+.footer div {
+    padding: var(--padding);
+    margin: var(--margin);
+}

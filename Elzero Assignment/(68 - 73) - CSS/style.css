@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --colorOne : #ff5722;
+    --colorTwo : #009688;
+}
+
+
+
+
+/** Ass 1 */
+.one,
+.two {
+    margin: 100px auto;
+    width: 150px;
+    height: 100%;
+    font-size: 35px;
+    position: relative;
+    color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    background-color: var(--colorOne);
+    padding: 20px;
+}
+
+.one::before,
+.one::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorOne);
+    z-index: -1;
+}
+
+.one::before {
+    transform: skew(10deg , 10deg);
+}
+
+.one::after {
+    transform: skew(-10deg , -10deg);
+}
+
+
+
+
+/** Ass 2 */
+.two {
+    background-color: var(--colorTwo);
+    padding: 20px;
+}
+
+.two::before,
+.two::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: var(--colorTwo);
+    transform: skew(20deg);
+    z-index: -1;
+}
+
+.two::before {
+    width: 100%;
+    top: 0;
+    left: -20px;
+}
+
+.two::after {
+    width: 10%;
+    top: 0;
+    left: -43px;
+}
+
+
+
+
+/** Ass 3 */
+/* .class {
+    matrix(3, 0.2679, 0, 3, 20, 100);
+    -scaleX(3)
+    -skewY(0.2679)
+    -skewX(3)
+    -scaleY(0)
+    -translateX(20)
+    -translateY(100) 
+} 
+*/
+
+
+
+
+/** Ass 4 */
+.four {
+    width: 200px;
+    height: 200px;
+    background-color: #607d8b;
+    margin: 200px auto;
+    padding: 10px;
+    position: relative;
+    border-bottom: 5px solid #000;
+    
+    display: flex;
+    align-items: end;
+}
+
+.four::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: #000;
+    transform: rotate(45deg);
+    top: -68px;
+    left: 28px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+
+.four::after {
+    content: 'Hamada';
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+/** Ass 5 */
+.five,
+.six {
+    margin: 40px auto;
+    width: 200px;
+    perspective: 600px;
+}
+
+.box1,
+.box2 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transform-style: preserve-3d;
+
+    transition: 1s;
+}
+
+.box1:hover {
+    transform: rotateY(-180deg);
+}
+
+.box2:hover {
+    transform: rotateX(-180deg);
+}
+
+.box1 .face, 
+.box2 .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 5px;
+    color: white;
+
+    backface-visibility: hidden;
+}
+
+.box1 .front,
+.box2 .front {
+    background-color: #fa3664;
+}
+
+.box1 .back,
+.box2 .back {
+    background-color: #2296f4;
+}
+
+.box1 .back {
+    transform: rotateY(180deg);
+}
+
+.box2 .back {
+    transform: rotateX(180deg);
+}

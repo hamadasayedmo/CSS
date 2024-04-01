@@ -1,0 +1,70 @@
+
+:root {
+    --mainTransition : all .5s 0s ease;
+}
+
+.parent {
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    margin: 20px auto;
+    text-align: center;
+    transition: var(--mainTransition);
+}
+
+.one,
+.two {
+    padding: 10px;
+}
+
+.two {
+    background-color: #ccc;
+    transition: var(--mainTransition);
+}
+
+.parent:hover {
+    margin-top: 40px;
+}
+
+.parent:hover .two {
+    margin-top: 30px;
+}
+
+.Ass2 {
+    background-color: #eee !important;
+    color: black !important;
+    text-align: center !important;
+    border: 1px solid #eee !important;
+    width: 400px;
+    margin: 20px auto;
+    position: relative;
+    text-indent: -20000px;
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.Ass2::after {
+    content: "Hamada";
+    position: absolute;
+    top: 21px;
+    left: 184px;
+    text-indent: 0;
+}
+
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+    --mainMargin: 10px;
+    --mainBorder: 2px solid;
+}
+
+.Ass3 div {
+    
+    /*! var(name-variables , Fall Back)*/
+    padding: var(--mainPadding , 10px);
+    margin: var(--mainMargin , 10px);
+    color: var(--mainColor , red);
+    border: var(--mainBorder , 2px solid);
+    border-color: var(--mainColor,black);
+    font-family: Arial;
+}

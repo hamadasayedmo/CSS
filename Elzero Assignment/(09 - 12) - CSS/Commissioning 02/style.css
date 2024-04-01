@@ -1,0 +1,23 @@
+.one,
+.tow,
+.three {
+    font-family: Arial;
+    width: 400px;
+    background-color: whitesmoke;
+    padding: 15px;
+    margin: 20px;
+    outline: 12px whitesmoke solid;
+}
+
+.one {
+    border-left: 7px  #e91e63  solid;
+}
+
+.tow {
+    border-left: 7px  yellowgreen  solid;
+    visibility: hidden;
+}
+
+.three {
+    border-left: 7px  #03a9f4   solid;
+} 

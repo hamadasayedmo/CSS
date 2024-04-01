@@ -1,0 +1,7 @@
+div:nth-last-of-type(3) {
+    color: red;
+}
+
+.parent > :only-child {
+    color: red;
+}

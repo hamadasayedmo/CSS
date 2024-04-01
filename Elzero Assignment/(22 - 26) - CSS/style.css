@@ -1,0 +1,64 @@
+.one ,
+.tow{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial;
+    background-color: #eee;
+}
+
+.one {
+    border: 5px solid orangered;
+}
+
+.one p,
+.tow p {
+    padding: inherit;
+    border: inherit;
+}
+
+.tow {
+    border: 5px #009688 solid;
+}
+
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight {
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.three {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.four {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+
+.five {
+    font-family: 'Jomhuria', cursive;
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.six{
+    font-size: 2.5rem;
+}
+
+.seven{
+    font-size: 2rem;
+}
+
+.eight{
+    font-size: 1.5rem;
+}

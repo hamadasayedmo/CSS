@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.one div {
+    counter-increment: count;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    margin: 20px;
+    border-radius: 50%;
+    line-height: 6;
+    box-shadow: -5px -5px 0 0 #e91e63, 5px 5px 0 0 #2196f3;
+    display: inline-block;
+}
+
+.one div::before {
+    content: counter(count);
+    background-color: black;
+    color: #fff;
+    padding: 5px 7px;
+    border-radius: 50%;
+    position: relative;
+    top: -47px;
+    right: -37px;
+}
+
+.one div::after {
+    content: attr(data-person);
+    position: absolute;
+}
+.two div {
+    width: 100px;
+    height: 100px;
+    box-shadow: inset 0 0 20px;
+    background-color: #efefef;
+    margin: 20px;
+    border-top-right-radius: 58px;
+    border-top-left-radius: 10px 15px;
+    border-bottom-right-radius: 12px 30px;
+    border-bottom-left-radius: 52px;
+}
+
+.parent {
+    width: 550px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.child1,
+.child2 {
+    width: 250px;
+    height: 300px;
+    float: left;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 0 8px -3px;
+    border-radius: 5px;
+}
+
+.child2 {
+    margin-left: 28px;
+}
+
+.ch1 {
+    background-color: #e91e63;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffff;
+}
+
+.ch2 {
+    width: 200px;
+    height: 200px;
+    background-color: #2196f3;
+    display: inline-block;
+    position: relative;
+    top: 22px;
+    left: 3px;
+    border-radius: 50%;
+    color: #ffff;
+}
+
+.ch2::before {
+    content: attr(data-inside);
+    position: relative;
+    top: 41%;
+    left: 72px;
+    font-size: 28px;
+}
+
+.or {
+    width: 25px;
+    height: 25px;
+    background-color: #e91e63;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    padding-top: 4px;
+    top: 437px;
+    left: 280px;
+}
+
+.or::before {
+    content: "";
+    width: 2px;
+    height: 138px;
+    background-color: #03a9f4;
+    position: absolute;
+    left: 11px;
+    top: 25px;
+}
+
+.or::after {
+    content: "";
+    width: 2px;
+    height: 139px;
+    background-color: #000;
+    position: absolute;
+    left: 11px;
+    top: -138px;
+}

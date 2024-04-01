@@ -1,0 +1,127 @@
+*{
+    font-family: Arial;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    gap: 15px 15px;
+}
+
+.E,
+.L {
+    font-size: 400px;
+    font-weight: bold;
+    color: #323234;
+}
+
+.parent::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    left: 199px;
+    top: 86px;
+    animation-name: move-e;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.parent::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    right: 180px;
+    bottom: 324px;
+    opacity: 0;
+    animation: move-l 3s linear infinite;
+    animation-delay: 6s;
+}
+
+@keyframes move-e {
+    0% {
+        left: 199px;
+        top: 86px;
+    }    
+    10% {
+        top: 86px;
+        left: 40px;
+    }
+    20% {
+        left: 40px;
+        top: 200px;
+    }
+    30% {
+        left: 185px;
+        top: 200px;
+    }
+    40% {
+        left: 40px;
+        top: 200px;
+    }
+    50% {
+        left: 40px;
+        top: 325px;
+    }
+    60% {
+        left: 199px;
+        top: 325px;
+    }
+    70% {
+        left: 40px;
+        top: 325px;
+    }
+    80% {
+        left: 40px;
+        top: 86px;
+    }
+    100% {
+        left: 199px;
+        top: 86px;
+    }
+}
+
+
+@keyframes move-l {
+    0% {
+        right: 180px;
+        bottom: 324px;
+        opacity: 0;
+    }
+    10% {
+        right: 180px;
+        bottom: 324px;
+        opacity: 1;
+    }
+    30% {
+        right: 330px;
+        bottom: 324px;
+        opacity: 1;
+    }
+    60% {
+        right: 330px;
+        bottom: 424px;
+        opacity: 1;
+    }
+    90% {
+        right: 330px;
+        bottom: 560px;
+        opacity: 1;
+    }
+    100% {
+        right: 330px;
+        bottom: 560px;
+        opacity: 0;
+    }
+
+}
+
+
+
