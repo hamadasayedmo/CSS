@@ -1,0 +1,16 @@
+/*
+    CSS Selector
+    - * All Elements
+    - Elements [p , div, span]
+    - Elements otherElements => div p
+    - .Class-name
+    - #id-name
+    - .Parent.Child => Element From  2 Class
+    - p.class-name
+    - .class-name > .child => هنا هينسق الابن مباشر
+*/
+
+
+.class-name > .child {
+    color: brown;
+}

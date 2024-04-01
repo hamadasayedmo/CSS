@@ -1,0 +1,21 @@
+.parent {
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    margin: 10px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+
+}
+
+.parent div {
+    padding: 20px;
+    background-color: red;
+    color: #fff;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
