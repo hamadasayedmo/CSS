@@ -1,8 +1,0 @@
-div {
-    background-color: #eee;
-    padding: 10px;
-    width: 200px;
-    white-space: nowrap; /* نص خارج المحتوي */
-    overflow: hidden; /* اخفاء النص الخارج عن المحتوي */
-    text-overflow: ellipsis; /* ... التعويض عنه */
-}
