@@ -1,0 +1,15 @@
+.radius {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    margin: 10px auto;
+    
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    /* short hand */ 
+    border-radius: 25px 25px 25px 25px;
+    
+}

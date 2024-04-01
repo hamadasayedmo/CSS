@@ -1,0 +1,35 @@
+/*
+    * Gradients
+    * linear-gradient(Direction || Angle, Color Stop 1, Color Stop 2, ....)
+*/
+
+div {
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 10px;
+
+    position: relative;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -5px;
+    left: 0;
+    height: 5px;
+
+    background-image: linear-gradient(
+        to right,
+        #0000ff 20%,
+        #009688 20%,
+        #009688 40%,
+        #e91e63 40%,
+        #e91e63 60%,
+        #ff5722 60%,
+        #ff5722 80%,
+        #9c27b0 80%
+    );
+}

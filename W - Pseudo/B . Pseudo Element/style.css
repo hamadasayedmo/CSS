@@ -1,0 +1,24 @@
+.one span {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gold;
+    color: #fff;
+}
+
+.two::first-letter {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gold;
+    color: #fff;
+}
+
+.two::first-line {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: firebrick;
+}
+
+::selection {
+    background-color: hotpink;
+    color: white;
+}

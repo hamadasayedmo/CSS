@@ -1,0 +1,12 @@
+/*
+    CSS Selectors
+    - :first-child      => اول ابن نوعه براجراف للاب بتاعه
+    - :last-child       => اخر ابن نوعه براجراف للاب بتاعه
+    - :first-of-type    => الاول من نوع براجراف
+    - :last-of-type     => الاخر من نوع براجراف
+    - :only-child       => ابن واحد للاب من نوع براجراف
+*/
+
+p:only-child {
+    color: red;
+}
